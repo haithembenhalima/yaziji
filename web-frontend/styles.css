@@ -442,7 +442,11 @@ h6 {
 .w-6 {
   width: 1.5rem;
 }
-
+.small-toolbar {
+  font-size: 0.6rem; /* Make text smaller */
+  transform: scale(0.8); /* Optionally scale everything down */
+  text-align: center;
+}
 /*
 * style inject from the old files
 */

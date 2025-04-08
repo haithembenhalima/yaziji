@@ -82,209 +82,213 @@
               منشئ الجمل العربية
             </h2>
             <div class="card fancy-border">
-              <div
-                class="card-content grid grid-cols-1 md-grid-cols-2 lg-grid-cols-3 gap-4 pt-6 relative z-10"
-              >
-                <div class="space-y-2">
-                  <label for="sentenceType" class="label">نوع الجملة</label>
-                  <div class="select-wrapper">
-                    <select id="sentenceType" class="select">
-                      <option value="" selected disabled>
-                        اختر نوع الجملة
-                      </option>
-                      <option value="simple">بسيطة</option>
-                      <option value="compound">مركبة</option>
-                      <option value="complex">معقدة</option>
-                    </select>
-                  </div>
-                </div>
-
-                <div class="space-y-2">
-                  <label for="subject" class="label">فاعل</label>
-                  <div class="select-wrapper">
-                    <select id="subject" class="select">
-                      <option value="" selected disabled>اختر الفاعل</option>
-                      <option value="student">الطالب</option>
-                      <option value="teacher">المعلم</option>
-                      <option value="doctor">الطبيب</option>
-                      <option value="engineer">المهندس</option>
-                    </select>
-                  </div>
-                </div>
-
-                <div class="space-y-2">
-                  <label for="auxiliaryVerb" class="label">فعل مساعد</label>
-                  <div class="select-wrapper">
-                    <select id="auxiliaryVerb" class="select">
-                      <option value="" selected disabled>
-                        اختر الفعل المساعد
-                      </option>
-                      <option value="can">يستطيع</option>
-                      <option value="should">يجب</option>
-                      <option value="must">يلزم</option>
-                    </select>
-                  </div>
-                </div>
-
-                <div class="space-y-2">
-                  <label for="verb" class="label">فعل</label>
-                  <div class="select-wrapper">
-                    <select id="verb" class="select">
-                      <option value="" selected disabled>اختر الفعل</option>
-                      <option value="read">يقرأ</option>
-                      <option value="write">يكتب</option>
-                      <option value="eat">يأكل</option>
-                      <option value="drink">يشرب</option>
-                    </select>
-                  </div>
-                </div>
-
-                <div class="space-y-2">
-                  <label for="tense" class="label">الزمن</label>
-                  <div class="select-wrapper">
-                    <select id="tense" class="select">
-                      <option value="" selected disabled>اختر الزمن</option>
-                      <option value="past">ماضي</option>
-                      <option value="present">مضارع</option>
-                      <option value="future">مستقبل</option>
-                    </select>
-                  </div>
-                </div>
-
-                <div class="space-y-2">
-                  <label for="voice" class="label">مبني للمعلوم/المجهول</label>
-                  <div class="select-wrapper">
-                    <select id="voice" class="select">
-                      <option value="" selected disabled>اختر المبني</option>
-                      <option value="active">مبني للمعلوم</option>
-                      <option value="passive">مبني للمجهول</option>
-                    </select>
-                  </div>
-                </div>
-
-                <div class="space-y-2">
-                  <label for="polarity" class="label">مثبت/منفي</label>
-                  <div class="select-wrapper">
-                    <select id="polarity" class="select">
-                      <option value="" selected disabled>
-                        اختر الإثبات/النفي
-                      </option>
-                      <option value="positive">مثبت</option>
-                      <option value="negative">منفي</option>
-                    </select>
-                  </div>
-                </div>
-
-                <div class="space-y-2">
-                  <label for="object" class="label">مفعول</label>
-                  <div class="select-wrapper">
-                    <select id="object" class="select">
-                      <option value="" selected disabled>اختر المفعول</option>
-                      <option value="book">الكتاب</option>
-                      <option value="meal">الطعام</option>
-                      <option value="letter">الرسالة</option>
-                      <option value="medicine">الدواء</option>
-                    </select>
-                  </div>
-                </div>
-
-                <div class="space-y-2">
-                  <label for="timeAdverb" class="label">ظرف زمان</label>
-                  <div class="select-wrapper">
-                    <select id="timeAdverb" class="select">
-                      <option value="" selected disabled>
-                        اختر ظرف الزمان
-                      </option>
-                      <option value="morning">صباحاً</option>
-                      <option value="evening">مساءً</option>
-                      <option value="yesterday">أمس</option>
-                      <option value="tomorrow">غداً</option>
-                    </select>
-                  </div>
-                </div>
-
-                <div class="space-y-2">
-                  <label for="placeAdverb" class="label">ظرف مكان</label>
-                  <div class="select-wrapper">
-                    <select id="placeAdverb" class="select">
-                      <option value="" selected disabled>
-                        اختر ظرف المكان
-                      </option>
-                      <option value="school">في المدرسة</option>
-                      <option value="home">في البيت</option>
-                      <option value="library">في المكتبة</option>
-                      <option value="restaurant">في المطعم</option>
-                    </select>
-                  </div>
-                </div>
-
+              <form id="NewForm" name="NewForm" onsubmit="return false">
                 <div
-                  class="col-span-full mt-4 flex flex-col sm-flex-row justify-center gap-4"
+                  class="card-content grid grid-cols-1 md-grid-cols-2 lg-grid-cols-3 gap-4 pt-6 relative z-10"
                 >
-                  <button class="button button-primary">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="16"
-                      height="16"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      class="ml-2 h-4 w-4"
+                  <div class="space-y-2">
+                    <label for="sentenceType" class="label">نوع الجملة</label>
+                    <div class="select-wrapper">
+                      <select id="sentenceType" class="select">
+                        <option value="" selected disabled>
+                          اختر نوع الجملة
+                        </option>
+                        <option value="simple">بسيطة</option>
+                        <option value="compound">مركبة</option>
+                        <option value="complex">معقدة</option>
+                      </select>
+                    </div>
+                  </div>
+
+                  <div class="space-y-2">
+                    <label for="subject" class="label">فاعل</label>
+                    <div class="select-wrapper">
+                      <select id="subject" class="select">
+                        <option value="" selected disabled>اختر الفاعل</option>
+                        <option value="student">الطالب</option>
+                        <option value="teacher">المعلم</option>
+                        <option value="doctor">الطبيب</option>
+                        <option value="engineer">المهندس</option>
+                      </select>
+                    </div>
+                  </div>
+
+                  <div class="space-y-2">
+                    <label for="auxiliaryVerb" class="label">فعل مساعد</label>
+                    <div class="select-wrapper">
+                      <select id="auxiliaryVerb" class="select">
+                        <option value="" selected disabled>
+                          اختر الفعل المساعد
+                        </option>
+                        <option value="can">يستطيع</option>
+                        <option value="should">يجب</option>
+                        <option value="must">يلزم</option>
+                      </select>
+                    </div>
+                  </div>
+
+                  <div class="space-y-2">
+                    <label for="verb" class="label">فعل</label>
+                    <div class="select-wrapper">
+                      <select id="verb" class="select">
+                        <option value="" selected disabled>اختر الفعل</option>
+                        <option value="read">يقرأ</option>
+                        <option value="write">يكتب</option>
+                        <option value="eat">يأكل</option>
+                        <option value="drink">يشرب</option>
+                      </select>
+                    </div>
+                  </div>
+
+                  <div class="space-y-2">
+                    <label for="tense" class="label">الزمن</label>
+                    <div class="select-wrapper">
+                      <select id="tense" class="select">
+                        <option value="" selected disabled>اختر الزمن</option>
+                        <option value="past">ماضي</option>
+                        <option value="present">مضارع</option>
+                        <option value="future">مستقبل</option>
+                      </select>
+                    </div>
+                  </div>
+
+                  <div class="space-y-2">
+                    <label for="voice" class="label"
+                      >مبني للمعلوم/المجهول</label
                     >
-                      <path d="m15 15.5-2 2h4v-4l-2 2z"></path>
-                      <path
-                        d="M10.5 8.5 9 11l2.5 2.5L8 17l-4-4 6-6 4 4-3.5 3.5z"
-                      ></path>
-                      <path
-                        d="M18 2c-.5 0-1.1.2-1.4.6L12 7l6 6 4.6-4.6c.8-.8.8-2 0-2.8L18.8 2.6C18.4 2.2 17.8 2 18 2z"
-                      ></path>
-                    </svg>
-                    بناء
-                  </button>
-                  <button class="button button-outline">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="16"
-                      height="16"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      class="ml-2 h-4 w-4"
-                    >
-                      <path
-                        d="M20 11A8.1 8.1 0 0 0 4.5 9M4 5v4h4M4 13a8.1 8.1 0 0 0 15.5 2m.5 4v-4h-4"
-                      ></path>
-                    </svg>
-                    عشوائي
-                  </button>
-                  <button class="button button-gold">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="16"
-                      height="16"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      class="ml-2 h-4 w-4"
-                    >
-                      <path
-                        d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z"
-                      ></path>
-                      <circle cx="12" cy="12" r="3"></circle>
-                    </svg>
-                    إظهار عينة
-                  </button>
+                    <div class="select-wrapper">
+                      <select id="voice" class="select">
+                        <option value="" selected disabled>اختر المبني</option>
+                        <option value="active">مبني للمعلوم</option>
+                        <option value="passive">مبني للمجهول</option>
+                      </select>
+                    </div>
+                  </div>
+
+                  <div class="space-y-2">
+                    <label for="polarity" class="label">مثبت/منفي</label>
+                    <div class="select-wrapper">
+                      <select id="polarity" class="select">
+                        <option value="" selected disabled>
+                          اختر الإثبات/النفي
+                        </option>
+                        <option value="positive">مثبت</option>
+                        <option value="negative">منفي</option>
+                      </select>
+                    </div>
+                  </div>
+
+                  <div class="space-y-2">
+                    <label for="object" class="label">مفعول</label>
+                    <div class="select-wrapper">
+                      <select id="object" class="select">
+                        <option value="" selected disabled>اختر المفعول</option>
+                        <option value="book">الكتاب</option>
+                        <option value="meal">الطعام</option>
+                        <option value="letter">الرسالة</option>
+                        <option value="medicine">الدواء</option>
+                      </select>
+                    </div>
+                  </div>
+
+                  <div class="space-y-2">
+                    <label for="timeAdverb" class="label">ظرف زمان</label>
+                    <div class="select-wrapper">
+                      <select id="timeAdverb" class="select">
+                        <option value="" selected disabled>
+                          اختر ظرف الزمان
+                        </option>
+                        <option value="morning">صباحاً</option>
+                        <option value="evening">مساءً</option>
+                        <option value="yesterday">أمس</option>
+                        <option value="tomorrow">غداً</option>
+                      </select>
+                    </div>
+                  </div>
+
+                  <div class="space-y-2">
+                    <label for="placeAdverb" class="label">ظرف مكان</label>
+                    <div class="select-wrapper">
+                      <select id="placeAdverb" class="select">
+                        <option value="" selected disabled>
+                          اختر ظرف المكان
+                        </option>
+                        <option value="school">في المدرسة</option>
+                        <option value="home">في البيت</option>
+                        <option value="library">في المكتبة</option>
+                        <option value="restaurant">في المطعم</option>
+                      </select>
+                    </div>
+                  </div>
+
+                  <div
+                    class="col-span-full mt-4 flex flex-col sm-flex-row justify-center gap-4"
+                  >
+                    <button class="button button-primary">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        class="ml-2 h-4 w-4"
+                      >
+                        <path d="m15 15.5-2 2h4v-4l-2 2z"></path>
+                        <path
+                          d="M10.5 8.5 9 11l2.5 2.5L8 17l-4-4 6-6 4 4-3.5 3.5z"
+                        ></path>
+                        <path
+                          d="M18 2c-.5 0-1.1.2-1.4.6L12 7l6 6 4.6-4.6c.8-.8.8-2 0-2.8L18.8 2.6C18.4 2.2 17.8 2 18 2z"
+                        ></path>
+                      </svg>
+                      بناء
+                    </button>
+                    <button class="button button-outline">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        class="ml-2 h-4 w-4"
+                      >
+                        <path
+                          d="M20 11A8.1 8.1 0 0 0 4.5 9M4 5v4h4M4 13a8.1 8.1 0 0 0 15.5 2m.5 4v-4h-4"
+                        ></path>
+                      </svg>
+                      عشوائي
+                    </button>
+                    <button class="button button-gold">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        class="ml-2 h-4 w-4"
+                      >
+                        <path
+                          d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z"
+                        ></path>
+                        <circle cx="12" cy="12" r="3"></circle>
+                      </svg>
+                      إظهار عينة
+                    </button>
+                  </div>
                 </div>
-              </div>
+              </form>
             </div>
           </div>
 

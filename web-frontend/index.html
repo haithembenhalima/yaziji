@@ -53,7 +53,7 @@
               <h1
                 class="text-3xl md-text-4xl font-bold bg-gradient text-transparent"
               >
-                اليازجي
+                اليَازِجي
               </h1>
               <svg
                 class="mr-2 h-6 w-6 text-gold"
@@ -261,6 +261,26 @@
                     </div>
                   </div>
 
+                  <!-- Last mark -->
+                  <div class="space-y-2 mt-8">
+                    <div>
+                      <input
+                        checked="checked"
+                        class="checkbox"
+                        id="LastMark"
+                        value="1"
+                        type="checkbox"
+                        title="'إظهار حركة الإعراب في أواخر الكلمات'"
+                      />
+                      <label
+                        id="LastMark_label"
+                        for="LastMark"
+                        data-original-text="حركة الإعراب"
+                        >حركة الإعراب</label
+                      >
+                    </div>
+                  </div>
+
                   <!-- Action Buttons -->
                   <div
                     class="col-span-full mt-4 flex flex-col sm-flex-row justify-center gap-4"
@@ -430,6 +450,26 @@
           </div>
         </footer>
       </div>
+
+      <!-- All the scripts (JS) -->
+      <script>
+        // Example script for dynamic content
+        const script = "http://127.0.0.1:5000/";
+      </script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <script
+        async
+        src="resources/files/xzero-rtl/js/bootstrap-arabic.min.js"
+      ></script>
+      <script async src="resources/files/adawat.js"></script>
+      <script>
+        //*------------Configuration
+        // Set language path for translation
+        const language_url = "resources/json/";
+        const CONFIG_DEBUG_MODE = true;
+      </script>
+
+      <script></script>
     </body>
   </body>
 </html>

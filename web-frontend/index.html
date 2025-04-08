@@ -86,145 +86,191 @@
                 <div
                   class="card-content grid grid-cols-1 md-grid-cols-2 lg-grid-cols-3 gap-4 pt-6 relative z-10"
                 >
+                  <!-- Type of Sentence-->
                   <div class="space-y-2">
-                    <label for="sentenceType" class="label">نوع الجملة</label>
+                    <label
+                      id="phrase_type_label"
+                      for="phrase_type"
+                      data-original-text="نوع الجملة:"
+                      class="label"
+                      >نوع الجملة</label
+                    >
                     <div class="select-wrapper">
-                      <select id="sentenceType" class="select">
+                      <select
+                        id="phrase_type"
+                        class="select"
+                        name="phrase_type"
+                      >
                         <option value="" selected disabled>
                           اختر نوع الجملة
-                        </option>
-                        <option value="simple">بسيطة</option>
-                        <option value="compound">مركبة</option>
-                        <option value="complex">معقدة</option>
-                      </select>
+                        </option></select
+                      ><br />
                     </div>
                   </div>
 
+                  <!-- Subject -->
                   <div class="space-y-2">
-                    <label for="subject" class="label">فاعل</label>
+                    <label
+                      id="subject_label"
+                      for="subject"
+                      class="label"
+                      data-original-text="فاعل"
+                      >فاعل</label
+                    >
                     <div class="select-wrapper">
-                      <select id="subject" class="select">
+                      <select id="subject" class="select" name="subject">
                         <option value="" selected disabled>اختر الفاعل</option>
-                        <option value="student">الطالب</option>
-                        <option value="teacher">المعلم</option>
-                        <option value="doctor">الطبيب</option>
-                        <option value="engineer">المهندس</option>
                       </select>
                     </div>
                   </div>
 
+                  <!-- Auxiliary Verb -->
                   <div class="space-y-2">
-                    <label for="auxiliaryVerb" class="label">فعل مساعد</label>
+                    <label
+                      id="auxiliary_label"
+                      for="auxiliary"
+                      class="label"
+                      data-original-text="فعل مساعد"
+                      >فعل مساعد</label
+                    >
                     <div class="select-wrapper">
-                      <select id="auxiliaryVerb" class="select">
+                      <select id="auxiliary" class="select" name="auxiliary">
                         <option value="" selected disabled>
                           اختر الفعل المساعد
                         </option>
-                        <option value="can">يستطيع</option>
-                        <option value="should">يجب</option>
-                        <option value="must">يلزم</option>
                       </select>
                     </div>
                   </div>
 
+                  <!-- Main Verb -->
                   <div class="space-y-2">
-                    <label for="verb" class="label">فعل</label>
-                    <div class="select-wrapper">
-                      <select id="verb" class="select">
-                        <option value="" selected disabled>اختر الفعل</option>
-                        <option value="read">يقرأ</option>
-                        <option value="write">يكتب</option>
-                        <option value="eat">يأكل</option>
-                        <option value="drink">يشرب</option>
-                      </select>
-                    </div>
-                  </div>
-
-                  <div class="space-y-2">
-                    <label for="tense" class="label">الزمن</label>
-                    <div class="select-wrapper">
-                      <select id="tense" class="select">
-                        <option value="" selected disabled>اختر الزمن</option>
-                        <option value="past">ماضي</option>
-                        <option value="present">مضارع</option>
-                        <option value="future">مستقبل</option>
-                      </select>
-                    </div>
-                  </div>
-
-                  <div class="space-y-2">
-                    <label for="voice" class="label"
-                      >مبني للمعلوم/المجهول</label
+                    <label
+                      id="verb_label"
+                      for="verb"
+                      class="label"
+                      data-original-text="فعل:"
+                      >فعل:</label
                     >
                     <div class="select-wrapper">
-                      <select id="voice" class="select">
-                        <option value="" selected disabled>اختر المبني</option>
-                        <option value="active">مبني للمعلوم</option>
-                        <option value="passive">مبني للمجهول</option>
+                      <select id="verb" class="select" name="verb">
+                        <option value="" selected disabled>اختر الفعل</option>
                       </select>
                     </div>
                   </div>
 
+                  <!-- Tense -->
                   <div class="space-y-2">
-                    <label for="polarity" class="label">مثبت/منفي</label>
+                    <label
+                      id="tense_label"
+                      for="tense"
+                      class="label"
+                      data-original-text="زمن:"
+                      >زمن</label
+                    >
                     <div class="select-wrapper">
-                      <select id="polarity" class="select">
+                      <select id="tense" class="select" name="tense">
+                        >
+                        <option value="" selected disabled>اختر الزمن</option>
+                      </select>
+                    </div>
+                  </div>
+
+                  <!-- Voice: Active/Passive -->
+                  <div class="space-y-2">
+                    <label
+                      id="voice_label"
+                      for="voice"
+                      class="label"
+                      data-original-text="مبني للمعلوم/مجهول:"
+                      >مبني للمعلوم/مجهول</label
+                    >
+                    <div class="select-wrapper">
+                      <select id="voice" class="select" name="voice">
+                        <option value="" selected disabled>اختر المبني</option>
+                      </select>
+                    </div>
+                  </div>
+
+                  <!-- Positive/Negative -->
+                  <div class="space-y-2">
+                    <label
+                      id="negative_label"
+                      for="negative"
+                      class="label"
+                      data-original-text="مثبت/منفي:"
+                      >مثبت/منفي</label
+                    >
+                    <div class="select-wrapper">
+                      <select id="negative" class="select" name="negative">
                         <option value="" selected disabled>
                           اختر الإثبات/النفي
                         </option>
-                        <option value="positive">مثبت</option>
-                        <option value="negative">منفي</option>
                       </select>
                     </div>
                   </div>
 
+                  <!-- Object -->
                   <div class="space-y-2">
-                    <label for="object" class="label">مفعول</label>
+                    <label
+                      id="object_label"
+                      for="object"
+                      class="label"
+                      data-original-text="مفعول"
+                      >مفعول</label
+                    >
                     <div class="select-wrapper">
-                      <select id="object" class="select">
+                      <select id="object" class="select" name="object">
                         <option value="" selected disabled>اختر المفعول</option>
-                        <option value="book">الكتاب</option>
-                        <option value="meal">الطعام</option>
-                        <option value="letter">الرسالة</option>
-                        <option value="medicine">الدواء</option>
                       </select>
                     </div>
                   </div>
 
+                  <!-- Time -->
                   <div class="space-y-2">
-                    <label for="timeAdverb" class="label">ظرف زمان</label>
+                    <label
+                      id="time_label"
+                      for="time"
+                      class="label"
+                      data-original-text="ظرف زمان:"
+                      >ظرف زمان</label
+                    >
                     <div class="select-wrapper">
-                      <select id="timeAdverb" class="select">
+                      <select id="time" class="select" name="time">
                         <option value="" selected disabled>
                           اختر ظرف الزمان
                         </option>
-                        <option value="morning">صباحاً</option>
-                        <option value="evening">مساءً</option>
-                        <option value="yesterday">أمس</option>
-                        <option value="tomorrow">غداً</option>
                       </select>
                     </div>
                   </div>
 
+                  <!-- Place -->
                   <div class="space-y-2">
-                    <label for="placeAdverb" class="label">ظرف مكان</label>
+                    <label
+                      id="place_label"
+                      for="place"
+                      class="label"
+                      data-original-text="ظرف مكان:"
+                      >ظرف مكان</label
+                    >
                     <div class="select-wrapper">
-                      <select id="placeAdverb" class="select">
+                      <select id="place" class="select" name="place">
                         <option value="" selected disabled>
                           اختر ظرف المكان
                         </option>
-                        <option value="school">في المدرسة</option>
-                        <option value="home">في البيت</option>
-                        <option value="library">في المكتبة</option>
-                        <option value="restaurant">في المطعم</option>
                       </select>
                     </div>
                   </div>
 
+                  <!-- Action Buttons -->
                   <div
                     class="col-span-full mt-4 flex flex-col sm-flex-row justify-center gap-4"
                   >
-                    <button class="button button-primary">
+                    <button
+                      class="button button-primary"
+                      id="phrase"
+                      title="'بناء الجملة'"
+                      data-original-text="بناء"
+                    >
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="16"
@@ -247,7 +293,12 @@
                       </svg>
                       بناء
                     </button>
-                    <button class="button button-outline">
+                    <button
+                      class="button button-outline"
+                      id="random_select"
+                      title="'اختيار عشوائي للمفردات'"
+                      data-original-text="عشوائي"
+                    >
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="16"
@@ -266,7 +317,12 @@
                       </svg>
                       عشوائي
                     </button>
-                    <button class="button button-gold">
+                    <button
+                      class="button button-gold"
+                      id="sample"
+                      title="'نسخ عينة جيسون للتجارب البرمجية'"
+                      data-original-text="عينة"
+                    >
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="16"
@@ -284,7 +340,7 @@
                         ></path>
                         <circle cx="12" cy="12" r="3"></circle>
                       </svg>
-                      إظهار عينة
+                      عينة
                     </button>
                   </div>
                 </div>

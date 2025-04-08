@@ -265,6 +265,7 @@
                   <div
                     class="col-span-full mt-4 flex flex-col sm-flex-row justify-center gap-4"
                   >
+                    <!-- Build sentence button-->
                     <button
                       class="button button-primary"
                       id="phrase"
@@ -293,6 +294,8 @@
                       </svg>
                       بناء
                     </button>
+
+                    <!-- Random configuration button-->
                     <button
                       class="button button-outline"
                       id="random_select"
@@ -317,6 +320,8 @@
                       </svg>
                       عشوائي
                     </button>
+
+                    <!-- JSON format displayer button-->
                     <button
                       class="button button-gold"
                       id="sample"
@@ -348,6 +353,7 @@
             </div>
           </div>
 
+          <!-- Result Output -->
           <div class="w-full mt-8 animate-fade-in">
             <div class="card result-card">
               <div class="card-header">
@@ -377,9 +383,20 @@
                 </div>
               </div>
               <div class="card-content p-6">
-                <p class="text-xl leading-relaxed text-center font-amiri">
-                  قرأ المعلم الكتاب في المكتبة مساءً
-                </p>
+                <div class="flex justify-center">
+                  <p
+                    id="result"
+                    class="text-xl leading-relaxed text-center font-amiri"
+                  >
+                    {{ResultText}}
+                  </p>
+                  <p
+                    id="extra"
+                    class="text-xl leading-relaxed text-center font-amiri"
+                  >
+                    {{ExtraText}}
+                  </p>
+                </div>
               </div>
             </div>
           </div>

@@ -447,6 +447,9 @@ h6 {
   transform: scale(0.8); /* Optionally scale everything down */
   text-align: center;
 }
+#language {
+  width: 25%;
+}
 /*
 * style inject from the old files
 */
